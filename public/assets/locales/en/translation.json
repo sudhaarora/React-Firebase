@@ -1,5 +1,15 @@
 {
    "login":"login",
    "welcome_login": "Welcome to Login Page",
-   "welcome_message":"Welcome"
+   "welcome_message":"Welcome",
+   "dashboard_page":"Dashboard Page",
+   "add_new_user":"Add New User",
+   "admin":"Admin",
+   "main":"main",
+   "dashboard":"dashboard",
+   "dashboard_list":"dashboard list",
+   "users":"users",
+   "user":"user",
+   "logout":"logout",
+   "add_new_btn":"Add New"
 }

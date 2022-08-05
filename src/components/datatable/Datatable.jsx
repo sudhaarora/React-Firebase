@@ -5,13 +5,14 @@ import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { db } from "../../firebase";
+import { useTranslation } from "react-i18next";
 import { collection, getDocs, doc, deleteDoc, query, where  } from "firebase/firestore";
 
 const Datatable = () => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState([]);
   const usersRef = collection(db, "users"); 
-  
+  const { t } = useTranslation();
   useEffect(()=>{
     const fetchData = async()=> {
       let list = [];
@@ -71,7 +72,8 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
+       
+        {t("add_new_user")}
         <form onSubmit={handleSearch}>
         <div className="search">
         <input type="text" className="search" placeholder="Search by Name here.." onChange={(e)=>setSearch(e.target.value)} value={search} />
@@ -79,7 +81,7 @@ const Datatable = () => {
         </div>
         </form>
         <Link to="/users/new" className="link">
-          Add New
+        {t("add_new_btn")}
         </Link>
       </div>
       <DataGrid

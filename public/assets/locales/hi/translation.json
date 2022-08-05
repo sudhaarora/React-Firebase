@@ -1,5 +1,15 @@
 {
     "login": "लॉग इन करें",
     "welcome_login": "लॉगिन पेज में आपका स्वागत है",
-    "welcome_message": "आपका स्वागत है"
+    "welcome_message": "आपका स्वागत है",
+    "dashboard_page":"डैशबोर्ड पेज",
+    "add_new_user":"नई उपयोगकर्ता को जोड़ना",
+    "admin":"व्यवस्थापक",
+    "main":"मुख्य",
+    "dashboard":"डैशबोर्ड",
+    "dashboard_list":"डैशबोर्ड सूची",
+    "users":"उपयोगकर्ताओं",
+    "user":"उपयोगकर्ता",
+    "logout":"लॉग आउट",
+    "add_new_btn":"नया जोड़ो"
 }
